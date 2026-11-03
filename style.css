@@ -1,0 +1,35 @@
+html{
+    background: linear-gradient(to right, #9040d6,#6e399b);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#header{
+    font-family:"Redaction 50";
+    animation: SlideLeftRight;
+    animation-duration: 4s;
+}
+#intro{
+    font-family: "Redaction 50";
+    animation: SlideRightLeft;
+    animation-duration: 4s;
+}
+#pfp{
+    text-align:center;
+    animation: SlideBotTop;
+    animation-duration: 4s;
+}
+
+@keyframes SlideLeftRight{
+    from{margin-left:100%;}
+    to{transform:rotateZ(360deg);}
+}
+
+@keyframes SlideRightLeft{
+    from{margin-right:100%;}
+    to{transform:rotateY(360deg);}
+}
+
+@keyframes SlideBotTop{
+    from{margin-top: 100%;}
+    to{transform:rotateX(360deg);}
+}
